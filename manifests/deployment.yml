@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: satrijotomopipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: satrijotomopipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: satrijotomopipelinesjavascriptdocker 
+          image: acr28202019.azurecr.io/satrijotomopipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
